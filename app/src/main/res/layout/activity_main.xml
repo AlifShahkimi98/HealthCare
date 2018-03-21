@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_name"
+        android:layout_alignStart="@+id/textView_id"
+        android:text="Blood Pressure"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="33dp"
+        android:text="Blood Sugar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_Marks"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Heart Rate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_id"
+        android:layout_below="@+id/editText_id"
+        android:layout_marginTop="19dp"
+        android:hint="Name"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_Marks"
+        android:layout_alignStart="@+id/editText_name"
+        android:hint="Last Name"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText_Marks"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_surname"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:hint="Sector"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="58dp"
+        android:text="Add Data" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/button_add"
+        android:text="View All" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_delete"
+        android:layout_alignBottom="@+id/button_delete"
+        android:layout_alignStart="@+id/button_add"
+        android:text="Update" />
+
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_viewAll"
+        android:layout_below="@+id/button_add"
+        android:layout_marginTop="15dp"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="82dp"
+        android:text="Record"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_id"
+        android:layout_alignBottom="@+id/textView_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:hint="Staff Id"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif"
+        android:text="My eMployee"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
